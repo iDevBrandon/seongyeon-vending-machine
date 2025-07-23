@@ -46,7 +46,7 @@ pnpm install
 # 개발 서버 실행
 pnpm dev
 
-# 브라우저에서 http://localhost:5173 또는 http://localhost:5174 접속
+# 브라우저에서 http://localhost:5173 접속
 ```
 
 ### 빌드
@@ -128,15 +128,6 @@ pnpm build
 
     M --> N[3초 대기]
     N --> A
-
-    style A fill:#e1f5fe
-    style J fill:#c8e6c9
-    style I fill:#ffcdd2
-    style L fill:#fff3e0
-    style D2 fill:#ffcdd2
-    style E2 fill:#ffcdd2
-    style E4 fill:#ffcdd2
-    style K4 fill:#ffcdd2
 
 ## 🎯 기능 개요
 
@@ -271,11 +262,21 @@ interface Transaction {
 
 ✅ **모든 요구사항 완료**
 
-- 메커니즘 다이어그램 (Mermaid)
-- TypeScript + React 구현
-- 동작 가능한 화면 제공
-- 다양한 예외 케이스 처리
-- 사용자 중심 UI 설계
+- ✅ 메커니즘 다이어그램 (Mermaid flowchart)
+- ✅ TypeScript + React 구현
+- ✅ 주요 로직 구현 (상태 관리, 결제, 거스름돈 계산)
+- ✅ 다양한 예외 케이스 처리 (품절, 잔액부족, 거스름돈부족, 결제실패)
+- ✅ 동작 가능한 화면 제공
+- ✅ 사용자 중심 UI 설계
+- ✅ 버그 없는 안정적인 동작
+- ✅ 이해하기 쉬운 코드 구조
+
+**추가 구현사항:**
+
+- 카드 잔고 충전 기능
+- 실시간 상태 표시
+- 접근성 고려사항
+- 성능 최적화
 
 ---
 

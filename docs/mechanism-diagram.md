@@ -65,13 +65,6 @@ flowchart TD
     K5 --> K7[음료 배출]
     K7 --> I4
     K6 --> G
-
-    style A fill:#e1f5fe
-    style I4 fill:#c8e6c9
-    style D2 fill:#ffcdd2
-    style D8 fill:#ffcdd2
-    style K2 fill:#ffcdd2
-    style K6 fill:#ffcdd2
 ```
 
 ## 주요 상태 (State)
@@ -198,10 +191,10 @@ calculateChange(amount, inventory) {
 
 ## 성능 최적화
 
-1. **React.memo**: 불필요한 리렌더링 방지
-2. **useCallback**: 함수 재생성 방지
-3. **배치 상태 업데이트**: setState 호출 최소화
-4. **타이머 정리**: 메모리 누수 방지
+1. **useCallback**: 함수 재생성 방지로 리렌더링 최소화
+2. **배치 상태 업데이트**: setState 호출 최소화
+3. **타이머 정리**: useEffect cleanup으로 메모리 누수 방지
+4. **탐욕 알고리즘**: 거스름돈 계산 최적화
 
 ## 접근성 고려사항
 
@@ -209,7 +202,3 @@ calculateChange(amount, inventory) {
 2. **스크린 리더**: 적절한 라벨링
 3. **색상 대비**: WCAG 가이드라인 준수
 4. **포커스 표시**: 명확한 포커스 상태 표시
-
----
-
-_이 다이어그램은 자판기 시뮬레이터의 핵심 동작 메카니즘을 나타내며, 실제 구현된 코드와 1:1 대응됩니다._
