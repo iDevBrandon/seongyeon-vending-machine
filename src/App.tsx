@@ -1,7 +1,7 @@
-import "./App.css";
+import { VendingMachine } from "./components/VendingMachine";
 
 function App() {
-  return <div>Vending</div>;
+  return <VendingMachine />;
 }
 
 export default App;
