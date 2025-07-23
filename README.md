@@ -38,7 +38,6 @@ React와 TypeScript로 구현한 자판기 시뮬레이터입니다.
 ```bash
 # 프로젝트 클론
 git clone https://github.com/iDevBrandon/seongyeon-vending-machine.git
-cd seongyeon-vending-machine
 
 # 의존성 설치
 pnpm install
@@ -257,27 +256,3 @@ interface Transaction {
 - **반응형 디자인**: 다양한 화면 크기 지원
 - **성능 최적화**: useCallback을 통한 함수 메모이제이션
 - **메모리 관리**: useEffect cleanup을 통한 타이머 정리
-
-## 🎯 구현 결과
-
-✅ **모든 요구사항 완료**
-
-- ✅ 메커니즘 다이어그램 (Mermaid flowchart)
-- ✅ TypeScript + React 구현
-- ✅ 주요 로직 구현 (상태 관리, 결제, 거스름돈 계산)
-- ✅ 다양한 예외 케이스 처리 (품절, 잔액부족, 거스름돈부족, 결제실패)
-- ✅ 동작 가능한 화면 제공
-- ✅ 사용자 중심 UI 설계
-- ✅ 버그 없는 안정적인 동작
-- ✅ 이해하기 쉬운 코드 구조
-
-**추가 구현사항:**
-
-- 카드 잔고 충전 기능
-- 실시간 상태 표시
-- 접근성 고려사항
-- 성능 최적화
-
----
-
-_개발 시간: 약 4시간 (다이어그램 1시간, 구현 3시간)_
